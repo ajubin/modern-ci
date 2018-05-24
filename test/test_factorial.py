@@ -1,6 +1,5 @@
 import unittest
-
-from factorial import factorial
+from model.factorial import factorial
 
 class TestFactorialMethod(unittest.TestCase):
 

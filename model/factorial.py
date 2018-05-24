@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+class ClassImported:
+    pass
 
 def factorial(n):
     assert isinstance(n, int)
