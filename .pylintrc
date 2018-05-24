@@ -1,5 +1,4 @@
 ﻿[MASTER]
-
 # Specify a configuration file.
 #rcfile=
 
@@ -12,7 +11,7 @@ profile=no
 
 # Add files or directories to the blacklist. They should be base names, not
 # paths.
-ignore=CVS .git .hg
+ignore=CVS .git .hg venv
 
 # Pickle collected data for later comparisons.
 persistent=yes

@@ -6,5 +6,5 @@ install:
   - pip install -r requirements.txt
 
 script:
-  - pylint model/
+  - pylint model/ test/ app.py
   - pytest
