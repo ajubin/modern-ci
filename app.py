@@ -4,7 +4,9 @@ import signal
 from flask import Flask, request
 from model.factorial import factorial
 
-os.environ['FLASK_ENV'] = 'development'
+if not os.environ['FLASK_ENV']:
+    os.environ['FLASK_ENV'] = 'development'
+
 app = Flask(__name__)
 
 signal.signal(signal.SIGINT, lambda s, f: os._exit(0))
