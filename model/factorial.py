@@ -1,27 +1,31 @@
 #!/usr/bin/env python3
-class ClassImported:
-    pass
+'''
+A simple factorial function embedded in a dev ecosystem with travis
+'''
 
-def factorial(n):
-    assert isinstance(n, int)
-    if n == 0:
+def factorial(number):
+    '''
+    recursive function that return the factorial of an int
+    '''
+    assert isinstance(number, int)
+    if number == 0:
         return 1
-    else:
-        return factorial(n-1)*n
+    return factorial(number-1)*number
 
 
 if __name__ == '__main__':
     import sys
     def usage():
-        usage = '''usage : python3 {} n
+        '''usage of the command line'''
+        text = '''usage : python3 {} n
 with n being an integer
         '''.format(sys.argv[0])
-        print(usage)
+        print(text)
 
     if len(sys.argv) > 1:
         try:
-            n = int(sys.argv[1])
-            print(factorial(n))
+            NUM = int(sys.argv[1])
+            print(factorial(NUM))
         except ValueError:
             usage()
             sys.exit(1)
