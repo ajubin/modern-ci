@@ -13,6 +13,8 @@ Build and run with docker
 `docker build -t factorial .`
 `docker run -p 5000:5000 --rm -it factorial`
 
+`docker run -p5000:5000 --rm -it miguelestsurdocker/modern-ci:latest`
+
 # source
 
 Following the tutorial
